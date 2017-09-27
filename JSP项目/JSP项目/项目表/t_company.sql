@@ -1,0 +1,20 @@
+create table t_company(
+	id uniqueidentifier primary key default newid(),
+	email varchar(100) unique,
+	[passwor]	varchar(200),
+	name	varchar(100) not null,
+	principal varchar(10) not null,
+	logo	varchar(500) default 'logo.png',
+	[address] varchar(100) not null,
+	phone varchar(11) not null,
+	tel	varchar(11),	
+	open_date	datetime not null,
+	longitude float,	
+	latitude float,
+	[des] varchar(500),
+	created_time	datetime,
+	checked	char(1)	default 'N',
+	checked_time	datetime,
+	last_login_time	datetime,
+	status	char(1) default 'Y'
+)

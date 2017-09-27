@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Animo_Home_Decoration</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>com.mo.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/designer/*</url-pattern>
+  	<url-pattern>/Animo/Bnimo/Cnimo/*</url-pattern>
+  	<url-pattern>/customer/*</url-pattern>
+  	<url-pattern>/company/*</url-pattern>
+  	<url-pattern>/supply/*</url-pattern>
+  	<url-pattern>/index/*</url-pattern>
+  </filter-mapping>
+  
+   <filter>
+  	<filter-name>AdminFilter</filter-name>
+  	<filter-class>com.mo.filter.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AdminFilter</filter-name>
+  	<url-pattern>/background/*</url-pattern>
+  </filter-mapping>
+  
+     <filter>
+  	<filter-name>CompanyFilter</filter-name>
+  	<filter-class>com.mo.filter.CompanyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CompanyFilter</filter-name>
+  	<url-pattern>/f_company/*</url-pattern>
+  </filter-mapping>
+  
+     <filter>
+  	<filter-name>CustomerFilter</filter-name>
+  	<filter-class>com.mo.filter.CustomerFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CustomerFilter</filter-name>
+  	<url-pattern>/f_user/*</url-pattern>
+  </filter-mapping>
+  
+     <filter>
+  	<filter-name>DesignerFilter</filter-name>
+  	<filter-class>com.mo.filter.DesignerFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>DesignerFilter</filter-name>
+  	<url-pattern>/f_designer/*</url-pattern>
+  </filter-mapping>
+  
+     <filter>
+  	<filter-name>SupplyFilter</filter-name>
+  	<filter-class>com.mo.filter.SupplyFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SupplyFilter</filter-name>
+  	<url-pattern>/f_Supply/*</url-pattern>
+  </filter-mapping>
+  
+	<error-page> 
+	<error-code>404</error-code> 
+	<location>/404NotFound.jsp</location> 
+	</error-page> 
+  
+  <servlet>
+   	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/Animo/Bnimo/Cnimo/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   	<servlet-name>DesignerServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.DesignerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DesignerServlet</servlet-name>
+  	<url-pattern>/designer/*</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   	<servlet-name>HomeServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomeServlet</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+   	<servlet-name>CustomerServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.CustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustomerServlet</servlet-name>
+  	<url-pattern>/customer/*</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+   	<servlet-name>CompanyServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.CompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CompanyServlet</servlet-name>
+  	<url-pattern>/company/*</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+   	<servlet-name>SupplyServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.SupplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SupplyServlet</servlet-name>
+  	<url-pattern>/supply/*</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+   	<servlet-name>indexServlet</servlet-name>
+  	<servlet-class>com.mo.servlet.indexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>indexServlet</servlet-name>
+  	<url-pattern>/index/*</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

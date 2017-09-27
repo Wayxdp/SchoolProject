@@ -1,0 +1,10 @@
+.big{
+	width: 100%;
+	height:800px;
+	border:1px solid red;
+}
+.half{
+	width: 70%;
+	height:500px;
+	border:1px solid red;
+}

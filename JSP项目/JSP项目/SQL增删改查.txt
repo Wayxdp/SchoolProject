@@ -1,0 +1,21 @@
+插入数据
+insert into 表名 values (“数据”，“数据”，“数据”)
+insert into test values('test','test','1')
+insert into 表名('字段名1'，‘字段名2’) values('数据1','数据2')
+insert into test(son,age)values('彭宇','21')
+
+删除数据
+delete from 表名 where 字段名=‘需要删除的数据’
+delete from test where son=‘test’
+delete from 表名 where 字段名 in('字段数据1','字段数据2'.......)
+delete from test where sno in('test1','test2','test3')
+
+修改数据
+update 表名 set 字段=‘修改后的数据’ where 字段=‘修改条件’
+update test set sno='SQL修改语句' where sno='test'
+
+查询数据
+select * from 表名
+select * from test
+select * from 表名 where 字段=‘需要查询的数据’
+select * from test where sno=‘彭宇’

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Context>
+	<Resource 
+		name="jdbc/datasource"
+		type="javax.sql.DataSource"
+		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		url="jdbc:sqlserver://localhost:1433;DatabaseName=Decoration2"
+		username="sa"
+		password="7777777"
+		maxIdle="5"
+		maxActive="20"
+		maxWait="3000"
+	/>
+</Context>

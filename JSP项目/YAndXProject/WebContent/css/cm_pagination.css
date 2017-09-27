@@ -1,0 +1,103 @@
+/*** wealink pagination CSS  ***/
+
+
+.x_pagenobox{
+    margin-top:4px;
+	height: 30px;
+	line-height: 30px;
+}
+.x_pagenobox .paginator a:link {
+    color: #0063DC;
+    text-decoration: none;
+}
+.x_pagenobox .paginator a:visited {
+    color: #2E67C7;
+    text-decoration: none;
+}
+.x_pagenobox .paginator a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #0063DC;
+}
+.x_pagenobox .paginator a:active {
+    color: #2E67C7;
+    text-decoration: none;
+    background: #0259C4;
+}
+.x_pagenobox .fillleft{
+    float:left;
+    border-style:solid;
+    border-width:1px;
+
+}
+.x_pagenobox .totaltitle{
+    float:left;
+	height: 30px;
+	line-height: 30px;
+    margin: 0px 0px 0px 5px;
+}
+.x_pagenobox .totalCount{
+    font-weight:bolder;
+    margin:0px 2px 0px 2px;
+}
+.x_pagenobox .paginator {
+    font: 12px Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 30px;
+	line-height: 30px;
+    float:left;
+}
+.x_pagenobox .paginator a, .pageList .this-page {
+    padding: 2px 6px;
+    border: solid 1px #ddd;
+    background: #fff;
+    text-decoration: none;
+}
+.x_pagenobox .paginator a:visited {
+    padding: 2px 6px;
+    border: solid 1px #ddd;
+    background: #fff;
+    text-decoration: none;
+}
+.x_pagenobox .paginator .break {
+    padding: 2px 6px;
+    border: none;
+    background: #fff;
+    text-decoration: none;
+}
+.x_pagenobox .paginator .end {
+    padding: 2px 6px;
+    border: solid 1px #ddd;
+    background: #fff;
+}
+.x_pagenobox .paginator .this-page {
+    padding: 2px 6px;
+    border-color: #999;
+    font-weight: bold;
+    font-size: 13px;
+    vertical-align: top;
+    background: #fff;
+}
+.x_pagenobox .paginator a:hover {
+    color: #fff;
+    background: #0063DC;
+    border-color: #036;
+    text-decoration: none;
+}
+.x_pagenobox .paginator .ranking {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+.x_pagenobox .paginator .ranking a {
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+.x_pagenobox .paginator .ranking a:hover {
+    text-decoration: underline;
+    color: #f60;
+    background: transparent;
+}
+
+/**  pagination end -- **/

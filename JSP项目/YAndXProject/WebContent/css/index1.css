@@ -1,0 +1,57 @@
+元素 {
+}
+.imgTxt02 a:hover {
+    background: #f8f9f9;
+    text-decoration: none;
+}
+.imgTxt02 a {
+    height: 86px;
+    display: block;
+    padding-top: 36px;
+}
+a:hover {
+    color: #000;
+}
+a:hover {
+    color: #000;
+}
+a {
+    transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+}
+label, button, a {
+    cursor: pointer;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a {
+color: #333;
+}
+label, button, a {
+    cursor: pointer;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.imgTxt02 {
+    text-align: left;
+}
+.t-c {
+    text-align: center;
+}
+body {
+    font-family: "microsoft Yahei";
+}
+body {
+    font-size: 12px;
+    font-family: "SimSun","Arial Narrow";
+}
+body {
+    font-size: 12px;
+    font-family: "SimSun","Arial Narrow";
+}
